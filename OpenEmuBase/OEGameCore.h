@@ -504,3 +504,11 @@ OE_EXPORTED_CLASS
 @property(readonly) const void *videoBuffer OE_DEPRECATED("use -getVideoBufferWithHint:");
 
 @end
+
+@protocol OEScriptableGameCore <NSObject>
+@required
+
+- (void) setData: (NSData *)data atAddress: (UInt32)address;
+- (NSData *) getBytesAtAddress: (UInt32)address length: (UInt) length;
+
+@end
