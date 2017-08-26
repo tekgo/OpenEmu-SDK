@@ -84,6 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)resetEmulation:(id)sender;
 - (void)toggleEmulationPaused:(id)sender;
 - (void)takeScreenshot:(id)sender;
+- (IBAction)openScript:(id)sender;
 @end
 
 NS_ASSUME_NONNULL_END
