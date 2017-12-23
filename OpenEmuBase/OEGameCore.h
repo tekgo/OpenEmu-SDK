@@ -511,4 +511,8 @@ OE_EXPORTED_CLASS
 - (void) setData: (NSData *)data atAddress: (UInt32)address;
 - (NSData *) getBytesAtAddress: (UInt32)address length: (UInt) length;
 
+- (void) setColor:(UInt32)color atX:(UInt)x y: (UInt) y;
+- (CGSize) scriptScreenSize;
+- (void) drawData:(NSData *)data withSize:(CGSize)size;
+
 @end
